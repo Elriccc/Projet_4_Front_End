@@ -1,0 +1,10 @@
+services:
+  app:
+    image: "olympic-games-starter:${OLYMPIC_GAMES_STARTER_VERSION}"
+    ports:
+      - "${OLYMPIC_GAMES_STARTER_PORT}:80"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:${OLYMPIC_GAMES_STARTER_PORT}/"] 
+      interval: 30s
+      timeout: 5s
+      retries: 3
