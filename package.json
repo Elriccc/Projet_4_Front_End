@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "prepack": "ng build",
-    "test": "ng test --watch false"
+    "test": "ng test --watch false",
+    "dockerBuild": "docker build -t $(npm pkg get name | sed 's:.*/::' | tr -d '\"'):$(npm pkg get version | tr -d '\"') ."
   },
   "private": false,
   "dependencies": {
