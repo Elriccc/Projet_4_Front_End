@@ -120,9 +120,9 @@ jobs:
         run: npx semantic-release
 
       - name: Get version
-        id: semver
+        id: version
         run: |
-          VERSION=$(git describe --tags --abbrev=0)
+          VERSION=$(git describe --tags --abbrev=0 | sed 's/^v//')
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Login to GitHub Container Registry
@@ -138,7 +138,7 @@ jobs:
           context: .
           push: true
           build-args: |
-            VERSION=${{ steps.semver.outputs.version }}
+            VERSION=${{ steps.version.outputs.version }}
           tags: |
-            ${{ steps.image.outputs.image }}:${{ steps.semver.outputs.version }}
+            ${{ steps.image.outputs.image }}:${{ steps.version.outputs.version }}
             ${{ steps.image.outputs.image }}:latest
