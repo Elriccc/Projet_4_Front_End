@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: olympic-games-app
-        # TODO: add the image of the application from the gitlab registry
+        image: ghcr.io/elriccc/projet_4_front_end-front:1.1.0
         ports:
         - containerPort: 80
-      # TODO: define imagePullSecrets to use a docker-registry secret and authorize Kubenetes 
+      imagePullSecrets:
+      - name: regcred
