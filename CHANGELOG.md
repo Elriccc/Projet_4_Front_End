@@ -1,3 +1,13 @@
+# [1.2.0](https://github.com/Elriccc/Projet_4_Front_End/compare/v1.1.0...v1.2.0) (2026-04-16)
+
+
+### Features
+
+* ajout des chartes helm ([1c99a8d](https://github.com/Elriccc/Projet_4_Front_End/commit/1c99a8d7a906b172fb5e1b81c5b4355c96d6214d))
+* complétion du manifeste kubernetes ([4377c23](https://github.com/Elriccc/Projet_4_Front_End/commit/4377c2307418f8c83282754c861fe7ef2826e9c2))
+* création des chartes Helm ([ec7d9d5](https://github.com/Elriccc/Projet_4_Front_End/commit/ec7d9d5d6cfb44bcfb5a0fddd78848e97182c93d))
+* séparation des deux environnements ([f24faab](https://github.com/Elriccc/Projet_4_Front_End/commit/f24faaba7dbc0735919d2d08f33316bc8bc506d8))
+
 # [1.1.0](https://github.com/Elriccc/Projet_4_Front_End/compare/v1.0.0...v1.1.0) (2026-04-13)
 
 
