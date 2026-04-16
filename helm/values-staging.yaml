@@ -1,0 +1,6 @@
+app:
+  tag: "1.1.0"
+  replicaCount: 3
+
+secret:
+  dockerRegistry: regcred

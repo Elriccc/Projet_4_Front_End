@@ -1,14 +1,9 @@
 app:
   name: olympic-games-app
   image: ghcr.io/elriccc/projet_4_front_end-front
-  tag: "1.1.0"
-  replicaCount: 1
   port: 80
 
 service:
   app:
     name: olympic-games-app-service
     port: 80
-
-secret:
-  dockerRegistry: regcred
